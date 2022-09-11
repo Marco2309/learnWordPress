@@ -1,0 +1,242 @@
+/*
+Theme Name: themeMarco1
+Theme URI: https://github.com/Marco2309
+Author: Marco2309
+Author URI: https://github.com/Marco2309
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Tested up to: 5.9.2
+Requires PHP: 7.4.28
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: yardsale
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+:root {
+    --bg-dark: #292727;
+    --txt-white: #eaedf0;
+}
+
+html {
+    margin: 0;
+}
+
+.container-fluid {
+    width: 100vw;
+    margin: 0;
+}
+
+.bg-drk {
+    background-color: var(--bg-dark);
+    color: var(--txt-white);
+}
+
+.container,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* .header {
+} */
+
+.header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header nav a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--txt-white);
+}
+
+.header nav a h1 {
+    margin-left: 1rem;
+}
+
+.header nav .menu {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+
+/* 
+.header nav .menu img {
+    margin-right: 1rem;
+} */
+
+.header nav .menu div ul {
+    list-style: none;
+    display: none;
+    /* margin-right: 1rem; */
+}
+
+.header nav .menu ul li {
+    margin-right: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 720px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+    .header nav .menu div ul {
+        display: flex;
+        align-items: center;
+    }
+    .header nav .menu img {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1320px;
+    }
+}
+
+
+/* posts-cards */
+
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+}
+
+.card img {
+    max-width: 200px;
+}
